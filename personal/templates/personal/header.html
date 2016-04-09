@@ -17,12 +17,17 @@
 <body class="body" style="background-color:white">
   <div class="container" style="min-height:90%; ">  <!-- ikonki gorne -->
       <div class="row">
+        <div class="col-sm-2">
+        </div>
         <div class="col-sm-8">
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-2">
         <center>
           <br>
-          <p><a href="#" target="blank"><img src="{% static 'personal/img/face_icon.png' %}" style='max-height:20px;'></a> | <a href="#" target="blank"><img src="{% static 'personal/img/inst_icon.png' %}" style='max-height:20px;'></a> | <a href="#" target="blank"><img src="{% static 'personal/img/pin_icon.png' %}" style='max-height:20px;'></a> | <a href="#" target="blank"><img src="{% static 'personal/img/gogle_icon.png' %}" style='max-height:20px;'></a></p>
+          <p><a href="#" target="blank"><img src="{% static 'personal/img/face_icon.png' %}" style='max-height:20px;'></a>  |
+              <a href="#" target="blank"><img src="{% static 'personal/img/inst_icon.png' %}" style='max-height:20px;'></a> |
+              <a href="#" target="blank"><img src="{% static 'personal/img/pin_icon.png' %}" style='max-height:20px;'></a>  |
+              <a href="#" target="blank"><img src="{% static 'personal/img/gogle_icon.png' %}" style='max-height:20px;'></a></p>
         </center>
       </div>
   </div>
@@ -66,6 +71,7 @@
                     <br><br>
                         {% block content %}
                         {% endblock %}
+                    <br><br>
                     </div>
                   </div>
                   </div>
@@ -79,14 +85,28 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-2">
-            <footer>
+          <footer>
 		            <div class="container-fluid">
-                  <p><a href="#" target="blank"><img src="{% static 'personal/img/face_icon.png' %}" style='max-height:20px;' ></a> | <a href="#" target="blank"><img src="{% static 'personal/img/inst_icon.png' %}" style='max-height:20px;'></a> | <a href="#" target="blank"><img src="{% static 'personal/img/pin_icon.png' %}" style='max-height:20px;'></a> | <a href="#" target="blank"><img src="{% static 'personal/img/gogle_icon.png' %}" style='max-height:20px;'></a></p>
-                  <p>&copy;2016 by Lotka</p>
+                  <p><a href="#" target="blank"><img src="{% static 'personal/img/face_icon.png' %}" style='max-height:20px;' ></a> |
+                      <a href="#" target="blank"><img src="{% static 'personal/img/inst_icon.png' %}" style='max-height:20px;'></a> |
+                      <a href="#" target="blank"><img src="{% static 'personal/img/pin_icon.png' %}" style='max-height:20px;'></a>  |
+                      <a href="#" target="blank"><img src="{% static 'personal/img/gogle_icon.png' %}" style='max-height:20px;'></a>
+                  </p>
                   </div>
-	          </footer>
-          </div>
+	        </footer>
         </div>
+      <div class="col-sm-8">
       </div>
+      <div class="col-sm-2">
+          <footer>
+            <div class="container-fluid">
+              <right>
+              <p>&copy;2016 by Lotka</p>
+              </right>
+          </footer>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>

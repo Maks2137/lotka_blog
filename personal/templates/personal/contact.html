@@ -1,11 +1,13 @@
 {% extends "personal/header.html" %}
-{% block title %}Contact - {{ block.super }}{% endblock %}
 
 {% block content %}
-<h1>Contact</h1>
-<from role="form" action="" method="post">
+<left>
+<h5>W razie jakichkolwiek pytań napisz do mnie</h5>
+<br>
+<form role="form" action="" method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Submit</button>
+    <button type="submit">Wyślij</button>
 </form>
+</left>
 {% endblock %}
